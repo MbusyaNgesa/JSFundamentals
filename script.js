@@ -161,3 +161,13 @@ const tobe = todos
     return todo.id;
   });
 console.log(tobe);
+
+//Conditional Statements
+
+//If Statement
+const t = 10;
+if (t === 10) {
+  console.log(`This is equal`);
+} else {
+  console.log(`This is not equal`);
+}
