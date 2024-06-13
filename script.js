@@ -150,3 +150,14 @@ const isComplete = todos.filter(function (todos) {
   return todos.isCompleted === true;
 });
 console.log(isComplete);
+
+//Combining high order arrays
+//Chooses specific item witin the array
+const tobe = todos
+  .filter(function (todo) {
+    return todo.isCompleted === false;
+  })
+  .map(function (todo) {
+    return todo.id;
+  });
+console.log(tobe);
