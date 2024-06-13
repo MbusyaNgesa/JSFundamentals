@@ -88,7 +88,7 @@ const todos = [
   },
   {
     id: 3,
-    text: "I am Vengeace",
+    text: "I am Vengeance",
     isCompleted: true,
     z: null,
   },
@@ -132,3 +132,21 @@ for (let k = 0; k < todos.length; k++) {
 for (let to of todos) {
   console.log(to.id);
 }
+
+//High Order Array Methods
+//forEach loop
+todos.forEach(function (todo) {
+  console.log(todo.text);
+});
+
+//map
+const todoText = todos.map(function (todos) {
+  return todos.id;
+});
+console.log(todoText);
+
+//filter
+const isComplete = todos.filter(function (todos) {
+  return todos.isCompleted === true;
+});
+console.log(isComplete);
