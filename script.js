@@ -165,9 +165,11 @@ console.log(tobe);
 //Conditional Statements
 
 //If Statement
-const t = 10;
+const t = 1;
 if (t === 10) {
   console.log(`This is equal`);
+} else if (t > 10) {
+  console.log(`Bigger equal`);
 } else {
   console.log(`This is not equal`);
 }
