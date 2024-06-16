@@ -180,3 +180,20 @@ const w = 4;
 if (k > 10 && w < 8) {
   console.log(`Both are true`);
 }
+//ternary operators
+const u = 11;
+const color = u > 10 ? "red" : "blue";
+console.log(color);
+
+//switch statement
+switch (color) {
+  case "red":
+    console.log("Color is red");
+    break;
+  case "blue":
+    console.log("Color is blue");
+    break;
+  default:
+    console.log("Color is not red or blue");
+    break;
+}
