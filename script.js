@@ -166,10 +166,17 @@ console.log(tobe);
 
 //If Statement
 const t = 1;
-if (t === 10) {
+const p = 8;
+if (t > 5 || s > 10) {
   console.log(`This is equal`);
 } else if (t > 10) {
   console.log(`Bigger equal`);
 } else {
   console.log(`This is not equal`);
+}
+//&& Operator
+const k = 15;
+const w = 4;
+if (k > 10 && w < 8) {
+  console.log(`Both are true`);
 }
