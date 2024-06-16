@@ -197,3 +197,21 @@ switch (color) {
     console.log("Color is not red or blue");
     break;
 }
+
+//FUNCTIONS
+function addNums(num1, num2) {
+  console.log(num1 + num2);
+}
+
+addNums(5, 1);
+//functions are usually "returned" not console logged
+function addNumbers(num1 = 1, num2 = 8) {
+  return num1 + num2;
+}
+console.log(addNumbers(4, 12));
+
+//Arrow Functions
+const number = (num1, num2) => {
+  console.log(num1 + num2);
+};
+number(7, 5);
