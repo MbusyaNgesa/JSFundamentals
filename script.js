@@ -215,3 +215,34 @@ const number = (num1, num2) => {
   console.log(num1 + num2);
 };
 number(7, 5);
+
+//constructor functions
+//Example 1
+
+function Fruits(color, size, amount) {
+  this.color = color;
+  this.size = size;
+  this.amount = amount;
+}
+//instantiate an object
+const personX = new Fruits("Orange", "Big", 25);
+console.log(personX.size);
+
+//Example 2
+function Persons(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob);
+  this.getBirthYear = function () {
+    return this.dob.getFullYear();
+  };
+  this.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  };
+}
+
+//instantiate object
+const person1 = new Persons("Ian", "Ngesa", "28-02-2002");
+const person2 = new Persons("Ashley", "Wanjiru", "07-05-2004");
+console.log(person1.getBirthYear());
+console.log(person2.getFullName());
